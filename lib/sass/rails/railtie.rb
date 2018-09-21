@@ -77,7 +77,7 @@ module Sass::Rails
         end
       end
 
-      Sass.logger = app.config.sass.logger
+      Sass.logger = app.config.sass[:logger]
     end
 
     initializer :setup_compression, group: :all do |app|
